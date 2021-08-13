@@ -1,0 +1,41 @@
+
+.wrapFooter {
+    padding-left: 3%;
+    padding-right: 3%;
+    background-color: black;
+    color: white;
+    .layoutFooter {
+        display: flex;
+        flex-direction: column;
+        padding-bottom: 6vw;
+        @include desktop {
+            padding-bottom: 18pt;
+        }
+        > :nth-child(1) {
+            padding-top: 5vw;
+            padding-bottom: 5vw;
+            font-family: 'Shrikhand', cursive;
+            @include desktop {
+                padding-top: 15pt;
+                padding-bottom: 15pt;
+            }
+        }
+        .list {
+            display: flex;
+            flex-direction: column;
+            @include desktop {
+                flex-direction: row;
+                justify-content: space-between;
+            }
+            > div {
+                > i {
+                    width: 10vw;
+                    @include desktop {
+                        width: 30pt;
+                    }
+                    margin-bottom: 1vw;
+                }
+            }
+        }
+    }
+}

@@ -1,0 +1,116 @@
+
+
+.mainKo {
+    display: none;
+}
+.mainOk {
+    animation-name: loading;
+    animation-delay: 2s;
+    animation-fill-mode: both;
+    visibility: hidden;
+}
+.mainLoading {
+    display: block;
+    position: absolute;
+    top: 50vh;
+    left: 50vw;
+    z-index: -1;
+    & .fa-spinner {
+        animation-name: spinner;
+        animation-duration: 2s;
+        animation-timing-function: linear;
+        animation-fill-mode: both;
+        visibility: visible;
+    }
+}
+@keyframes spinner {
+    100% {
+        transform: rotate(360deg);
+        visibility: hidden;
+    }
+}
+@keyframes loading {
+    100% {
+        visibility: visible;
+    }
+}
+
+body {
+    margin:0;
+    height: 100%;
+}
+h1 {
+    margin:0;
+    font-size: 9vw;
+    @include desktop {
+        font-size: 27pt;
+    }
+}
+h2 {
+    margin:0;
+    font-size: 8vw;
+    @include desktop {
+        font-size: 24pt;
+    }
+}
+h3 {
+    margin:0;
+    font-size: 6vw;
+    @include desktop {
+        font-size: 18pt;
+    }
+}
+h4 {
+    margin:0;
+    font-size: 5vw;
+    font-weight: bolder;
+    @include desktop {
+        font-size: 15pt;
+    }
+}
+p,div {
+    margin:0;
+}
+a {
+   font-style: normal; 
+   color:white;
+   text-decoration: none;
+}
+.text0 {
+    margin:0;
+    font-size: 7vw;
+    @include desktop {
+        font-size: 24pt;
+    }
+}
+.text1 {
+    margin:0;
+    font-size: 5vw;
+    @include desktop {
+        font-size: 15pt;
+    }
+}
+.text1Bold {
+    margin:0;
+    font-size: 5vw;
+    font-weight: bold;
+    @include desktop {
+        font-size: 15pt;
+    }
+}
+.text2 {
+    margin:0;
+    font-size: 4vw;
+    @include desktop {
+        font-size: 12pt;
+    }
+}
+.text2Bold {
+    margin:0;
+    font-size: 4vw;
+    font-weight: bold;
+    @include desktop {
+        font-size: 12pt;
+    }
+}
+

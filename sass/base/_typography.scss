@@ -1,0 +1,26 @@
+
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/fontawesome";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/regular";
+@import "../../node_modules/@fortawesome/fontawesome-free/scss/solid";
+
+@font-face {
+    font-family: 'Shrikhand';
+    src: url(../font/Shrikhand/Shrikhand-Regular.ttf) format("truetype");
+}
+
+@font-face {
+    font-family: 'Roboto';
+    src: url(../font/Roboto/Roboto-Regular.ttf) format('truetype');
+}
+
+@mixin fontRoboto {
+    font-family: Roboto, sans-serif;
+}
+
+@mixin fontShrikhand {
+    font-family: 'Shrikhand', cursive;
+}
+
+body {
+    @include fontRoboto()    
+}
