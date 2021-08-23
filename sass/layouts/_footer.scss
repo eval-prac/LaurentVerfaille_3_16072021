@@ -1,13 +1,13 @@
 
 .wrapFooter {
-    padding-left: 3%;
-    padding-right: 3%;
+    padding-left: 7%;
+    padding-right: 7%;
     background-color: black;
     color: white;
     .layoutFooter {
         display: flex;
         flex-direction: column;
-        padding-bottom: 6vw;
+        padding-bottom: 8vw;
         @include desktop {
             padding-bottom: 18pt;
         }
@@ -28,12 +28,12 @@
                 justify-content: space-between;
             }
             > div {
+                margin-bottom: 2vw;
                 > i {
                     width: 10vw;
                     @include desktop {
                         width: 30pt;
                     }
-                    margin-bottom: 1vw;
                 }
             }
         }
