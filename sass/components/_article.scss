@@ -4,6 +4,7 @@
     flex-direction: column;
     align-items: stretch;
     position: relative;
+    cursor: pointer;
     &__figure {
         > img {
             display: block;
@@ -69,15 +70,3 @@
         color: $colorLabel;
     }
 }
-/*
-    &--new .shop__new::after {
-        content:"ok2000";
-    } 
-
-
-    &--new {
-        > .shop__new::after {
-            content:"ok2000";
-        }
-    } 
-*/

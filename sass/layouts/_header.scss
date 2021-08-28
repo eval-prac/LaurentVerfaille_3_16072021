@@ -8,12 +8,18 @@
         display: flex;
         justify-content: center;
         align-items: center;
-        i {
-            display: block;
+        >a  {
+            display: inline-block;
             position: absolute;
+            vertical-align: bottom;
             left:5vw;
+            @include desktop {
+                .text1 {
+                    font-size: 5vw;
+                }
+            }
         }
-        img {
+        >img {
             height:8vw;
         }
     }

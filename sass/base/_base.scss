@@ -1,40 +1,4 @@
 
-
-.mainKo {
-    display: none;
-}
-.mainOk {
-    animation-name: loading;
-    animation-delay: 2s;
-    animation-fill-mode: both;
-    visibility: hidden;
-}
-.mainLoading {
-    display: block;
-    position: absolute;
-    top: 50vh;
-    left: 50vw;
-    z-index: -1;
-    & .fa-spinner {
-        animation-name: spinner;
-        animation-duration: 2s;
-        animation-timing-function: linear;
-        animation-fill-mode: both;
-        visibility: visible;
-    }
-}
-@keyframes spinner {
-    100% {
-        transform: rotate(360deg);
-        visibility: hidden;
-    }
-}
-@keyframes loading {
-    100% {
-        visibility: visible;
-    }
-}
-
 body {
     margin:0;
     height: 100%;

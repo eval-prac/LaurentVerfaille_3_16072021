@@ -29,6 +29,7 @@
             }
             > div {
                 margin-bottom: 2vw;
+                cursor:pointer;
                 > i {
                     width: 10vw;
                     @include desktop {
