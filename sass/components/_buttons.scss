@@ -9,6 +9,7 @@
     border-radius: 50vw;
     color: white;
     font-size: 4vw;
+    cursor:pointer;
     @include desktop {
         height: 36pt;
         padding:3pt 15pt 3pt 15pt;
@@ -30,8 +31,9 @@
     box-shadow: 1vw 1vw 2vw $colorButtonShadow;
     color: black;
     border-radius: 4vw;
-    transition: all 0.5s;
+    transition: color 0.5s, background 0.5s, box-shadow 0.5s;
     font-size: 5vw;
+    cursor:pointer;
     @include desktop {
         height:30pt;
         width:230pt;
@@ -63,30 +65,30 @@
     }
 }
 
-
-
 .buttonMeal {
     display:flex;
     flex-direction: row-reverse;
     justify-content: stretch;
     height:17vw;
     width: 100%;
-
-    background: $colorButton;
+    background: white;
     box-shadow: 1vw 1vw 2vw $colorButtonShadow;
     color: black;
     border-radius: 4vw;
-    transition: all 0.5s;
-    font-size: 5vw;
-
+    cursor:pointer;
+    @include desktop {
+        height:60pt;
+        width: 260pt;
+        border-radius: 12pt;
+    }
     &__desc {
         display: inline-block;
         overflow: hidden;
-        flex-grow: 1;
         width:100%;
-        flex-direction: column;
-        justify-content: space-between;
         padding-left: 3vw;
+        @include desktop {
+            padding-left: 12pt;
+        }
         >* {
             width:100%;
             overflow: hidden;
@@ -94,45 +96,50 @@
             white-space: nowrap;
         }
         > :nth-child(1) {
-            margin-top: 3vw;
+            margin-top: 2vw;
+            @include desktop {
+                margin-top: 6pt;
+            }
         }
         > :nth-child(2) {
-            margin-bottom: 2vw;
+            margin-top: 2vw;
+            @include desktop {
+                margin-top: 6pt;
+            }
         }
     }
     &__price {
         display: inline-block;
         overflow: hidden;
-        flex-grow: 1;
-        flex-direction: column;
-        justify-content: space-between;
         margin-left: 3vw;
         margin-right: 3vw;
         min-width: 10vw;
-        >* {
+        width: 10vw;
+        @include desktop {
+            margin-left: 15pt;
+            margin-right: 15pt;
+            min-width: 30pt;
+            width: 30pt;
+        }
+    >* {
             min-width: 10vw;
             overflow: hidden;
             text-overflow: ellipsis;
             white-space: nowrap;
         }
         > :nth-child(1) {
-            margin-top: 3vw;
+            margin-top: 2vw;
+            @include desktop {
+                margin-top: 6pt;
+            }
         }
         > :nth-child(2) {
-            margin-bottom: 2vw;
+            margin-top: 2vw;
+            @include desktop {
+                margin-top: 6pt;
+            }
         }
     }
-/*    &__price {
-        display: flex;
-        flex-direction: column-reverse;
-        justify-content: space-between;
-        margin-right: 3vw;
-        min-width: 10vw;
-        >* {
-            min-width: 10vw;
-            margin-bottom: 3vw;
-        }
-    }*/
     &__figure {
         display: flex;
         justify-content: center;
@@ -144,6 +151,11 @@
         border-bottom-right-radius: 4vw;
         color:white;
         transition: all 0.5s;
+        font-size: 4vw;
+        @include desktop {
+            border-top-right-radius: 12pt;
+            border-bottom-right-radius: 12pt;
+            }
         > i {
             visibility: hidden;
             transition: all 0.5s;
@@ -153,54 +165,13 @@
         .buttonMeal__figure {
             min-width: 15vw;
             width: 15vw;
+            @include desktop {
+                min-width: 45pt;
+                width: 45pt;
+                }
             > i {
                 visibility: visible;
             }
-        }
-    }
-}
-
-
-
-.buttonMeal2 {
-    display: flex;
-    align-items: center;
-    height: 19vw;
-    margin-left: 2vw;
-    padding:1vw 3vw 1vw 3vw;
-    background: $colorButton;
-    box-shadow: 1vw 1vw 2vw $colorButtonShadow;
-    color: black;
-    border-radius: 4vw;
-    transition: all 0.5s;
-    font-size: 5vw;
-    @include desktop {
-        height:30pt;
-        width:230pt;
-        padding:3pt 9pt 3pt 9pt;
-        border-radius: 12pt;
-        font-size: 15pt;
-    }
-    > :nth-child(1) {
-        left:-5vw;
-        color:$colorPrimaire;
-        font-size: 3vw;
-        @include desktop {
-            left:-15pt;
-            font-size: 9pt;
-        }
-    }
-    > :nth-child(2) {
-        margin-right: 5vw;
-        @include desktop {
-            margin-right: 15pt;
-        }
-    }
-    &:hover {
-        background: $colorButtonDark;
-        box-shadow: 1vw 1vw 2vw $colorButtonShadowDark;
-        > :nth-child(2) {
-            color:$colorPrimaire;
         }
     }
 }
