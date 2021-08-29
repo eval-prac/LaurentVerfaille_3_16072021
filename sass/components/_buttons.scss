@@ -31,7 +31,7 @@
     box-shadow: 1vw 1vw 2vw $colorButtonShadow;
     color: black;
     border-radius: 4vw;
-    transition: all 0.5s;
+    transition: color 0.5s, background 0.5s, box-shadow 0.5s;
     font-size: 5vw;
     cursor:pointer;
     @include desktop {
@@ -75,7 +75,6 @@
     box-shadow: 1vw 1vw 2vw $colorButtonShadow;
     color: black;
     border-radius: 4vw;
-    transition: all 0.5s;
     cursor:pointer;
     @include desktop {
         height:60pt;

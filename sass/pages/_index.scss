@@ -2,7 +2,7 @@
 .rootOk {
     animation-name: loading;
     animation-delay: 2s;
-    animation-fill-mode: both;
+    animation-fill-mode: forwards;
     visibility: hidden;
 }
 .rootLoading {
@@ -133,13 +133,13 @@
             align-items: stretch;
             @include desktop {
                 flex-direction: row;
-                align-items: stretch;
+                flex-wrap: wrap;
             }
             > article {
                 margin-bottom: 3vw;
                 @include desktop {
-                    margin-bottom: 0;
-                    margin-right: 15px;
+                    margin-bottom: 15pt;
+                    margin-right: 15pt;
                 }
             }
         }

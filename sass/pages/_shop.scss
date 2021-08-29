@@ -1,25 +1,39 @@
 
-/*
-.buttonMeal {
-    animation-name:appear;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-out;
+// Progressive meals display
+@for $delai from 0 to 10 {
+    .list .buttonMeal:nth-child( #{$delai} ) {
+        animation-name:appear;
+        animation-duration: 1s;
+        animation-delay: #{$delai/3}s;
+        animation-fill-mode: both;
+        animation-timing-function: ease-out;
+    }
 }
-*/
-/*
-@keyframes appearz {
+@keyframes appear {
     0% {
-        margin-left: 100px;
+        margin-top: 5vw;
+        opacity: 0;
+
     }
     100% {
-        margin-left: 0px;
+        margin-top: 0px;
+        opacity: 1;
     }
 }
-*/
+@include desktop {
+    @keyframes appear {
+        0% {
+            margin-left: 15pt;
+            opacity: 0;
+        }
+        100% {
+            margin-left: 0px;
+            opacity: 1;
+        }
+    }
+}
 
-
+// Screen layouts
 .wrapMain {
     width: 100%;
     display: flex;
@@ -82,7 +96,6 @@
             }
         }
     }
-
 
     &__layoutMenu1 {
         > * {

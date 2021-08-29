@@ -1,4 +1,8 @@
 @charset "UTF-8";
+* {
+  box-sizing: border-box;
+}
+
 body {
   margin: 0;
   height: 100%;
@@ -6254,7 +6258,7 @@ body {
   box-shadow: 1vw 1vw 2vw #e7e7e7;
   color: black;
   border-radius: 4vw;
-  transition: all 0.5s;
+  transition: color 0.5s, background 0.5s, box-shadow 0.5s;
   font-size: 5vw;
   cursor: pointer;
 }
@@ -6304,7 +6308,6 @@ body {
   box-shadow: 1vw 1vw 2vw #e7e7e7;
   color: black;
   border-radius: 4vw;
-  transition: all 0.5s;
   cursor: pointer;
 }
 @media (min-width: 800px) {
@@ -6502,7 +6505,8 @@ body {
 }
 .wrapHeader__layoutHeader {
   width: 100%;
-  padding: 5vw 3vw 3vw 3vw;
+  margin-top: 5vw;
+  margin-bottom: 3vw;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -6575,7 +6579,7 @@ body {
 .rootOk {
   animation-name: loading;
   animation-delay: 2s;
-  animation-fill-mode: both;
+  animation-fill-mode: forwards;
   visibility: hidden;
 }
 
@@ -6724,7 +6728,7 @@ body {
 @media (min-width: 800px) {
   .wrapMain__layoutRestaurants > div.list {
     flex-direction: row;
-    align-items: stretch;
+    flex-wrap: wrap;
   }
 }
 .wrapMain__layoutRestaurants > div.list > article {
@@ -6732,30 +6736,113 @@ body {
 }
 @media (min-width: 800px) {
   .wrapMain__layoutRestaurants > div.list > article {
-    margin-bottom: 0;
-    margin-right: 15px;
+    margin-bottom: 15pt;
+    margin-right: 15pt;
   }
 }
 
-/*
-.buttonMeal {
-    animation-name:appear;
-    animation-duration: 1s;
-    animation-delay: 1s;
-    animation-fill-mode: both;
-    animation-timing-function: ease-out;
+.list .buttonMeal:nth-child(0) {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 0s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
 }
-*/
-/*
-@keyframes appearz {
+
+.list .buttonMeal:nth-child(1) {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 0.3333333333s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+.list .buttonMeal:nth-child(2) {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 0.6666666667s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+.list .buttonMeal:nth-child(3) {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 1s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+.list .buttonMeal:nth-child(4) {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 1.3333333333s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+.list .buttonMeal:nth-child(5) {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 1.6666666667s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+.list .buttonMeal:nth-child(6) {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 2s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+.list .buttonMeal:nth-child(7) {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 2.3333333333s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+.list .buttonMeal:nth-child(8) {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 2.6666666667s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+.list .buttonMeal:nth-child(9) {
+  animation-name: appear;
+  animation-duration: 1s;
+  animation-delay: 3s;
+  animation-fill-mode: both;
+  animation-timing-function: ease-out;
+}
+
+@keyframes appear {
+  0% {
+    margin-top: 5vw;
+    opacity: 0;
+  }
+  100% {
+    margin-top: 0px;
+    opacity: 1;
+  }
+}
+@media (min-width: 800px) {
+  @keyframes appear {
     0% {
-        margin-left: 100px;
+      margin-left: 15pt;
+      opacity: 0;
     }
     100% {
-        margin-left: 0px;
+      margin-left: 0px;
+      opacity: 1;
     }
+  }
 }
-*/
 .wrapMain {
   width: 100%;
   display: flex;
