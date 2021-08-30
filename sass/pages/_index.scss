@@ -47,7 +47,7 @@
             padding-top:15pt;
             padding-bottom:15pt;
         }
-        > section > i {
+        > div > i {
             margin-right: 4vw;
         }
     }
@@ -101,7 +101,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
             }
-            > section {
+            > div {
                 margin-bottom: 5vw;
             }
         }
@@ -135,7 +135,7 @@
                 flex-direction: row;
                 flex-wrap: wrap;
             }
-            > article {
+            > div {
                 margin-bottom: 3vw;
                 @include desktop {
                     margin-bottom: 15pt;
