@@ -6529,7 +6529,7 @@ body {
 .wrapFooter {
   padding-left: 7%;
   padding-right: 7%;
-  background-color: black;
+  background-color: #353535;
   color: white;
 }
 .wrapFooter .layoutFooter {
@@ -6650,6 +6650,9 @@ body {
   width: 100%;
   text-align: center;
 }
+.wrapMain__layoutExplore > :nth-child(2) {
+  color: #535353;
+}
 .wrapMain__layoutExplore > :nth-child(3) {
   display: flex;
   justify-content: center;
@@ -6736,8 +6739,15 @@ body {
 }
 @media (min-width: 800px) {
   .wrapMain__layoutRestaurants > div.list > div {
+    display: flex;
+    justify-content: center;
+    flex-basis: 45%;
+    flex-grow: 1;
     margin-bottom: 15pt;
     margin-right: 15pt;
+  }
+  .wrapMain__layoutRestaurants > div.list > div > div {
+    width: 230pt;
   }
 }
 
@@ -6924,6 +6934,7 @@ body {
 .wrapMain__layoutMenu1 > :nth-child(1) {
   margin-bottom: 3vw;
   margin-left: 3vw;
+  color: #535353;
 }
 .wrapMain__layoutMenu1 > :nth-child(1)::after {
   display: flex;

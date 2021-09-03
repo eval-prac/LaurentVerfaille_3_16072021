@@ -115,6 +115,7 @@
         > :nth-child(1) {
             margin-bottom: 3vw;
             margin-left: 3vw;
+            color:$colorDarkInk;
             &::after {
                 display: flex;
                 flex-direction: column;

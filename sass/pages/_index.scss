@@ -67,6 +67,9 @@
             width: 100%;
             text-align: center;
         }
+        > :nth-child(2) {
+            color:$colorDarkInk;
+        }
         > :nth-child(3) {
             display: flex;
             justify-content: center;
@@ -138,8 +141,15 @@
             > div {
                 margin-bottom: 3vw;
                 @include desktop {
+                    display: flex;
+                    justify-content: center;
+                    flex-basis: 45%;
+                    flex-grow: 1;
                     margin-bottom: 15pt;
                     margin-right: 15pt;
+                    > div {
+                        width: 230pt;
+                    }
                 }
             }
         }
